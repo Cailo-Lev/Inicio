@@ -12,7 +12,7 @@ body {
 
 /* Inicio: rojo intenso */
 body.inicio {
-    background-image: url('imagenes/red.png');
+    background-image: url('Imagenes/red.png');
 background-size:100% 100%;
     color: #fff;
     font-family: 'Merriweather', serif;
@@ -20,7 +20,7 @@ background-size:100% 100%;
 
 /* Realidad: azul profundo */
 body.realidad {
-    background-image: url('imagenes/fondo.png');
+    background-image: url('Imagenes/fondo.png');
   background-size:100% 100%;
     color: #f0f9ff;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +28,7 @@ body.realidad {
 
 /* Personajes: dorado romántico */
 body.personajes {
-    background-image: url('imagenes/matr.png');
+    background-image: url('Imagenes/matr.png');
   background-size:100% 100%;
   
     color: #2c2c2c;
@@ -52,18 +52,18 @@ body.personajes {
 
 /* Fondos internos */
 .fondoi {
-    background-image: url('imagenes/lir.png');
+    background-image: url('Imagenes/lir.png');
   background-size: cover;
     color: #fff;
 }
 .fondoc {
-  background-image: url('imagenes/kai.png');
+  background-image: url('Imagenes/kai.png');
   background-size: cover;
     color: #f0f9ff;
   width:75%;
 }
 .fondor {
-    background-image: url('imagenes/mat.png');
+    background-image: url('Imagenes/mat.png');
   background-size: cover;
     color: #2c2c2c;
 width:80%;
