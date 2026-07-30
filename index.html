@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <!-- Nota: Guarda tu canción como 'cancion.mp3' en la misma carpeta -->
+
     <audio id="musica-fondo" loop>
         <source src="evanilo.mpeg" type="audio/mpeg">
     </audio>
@@ -29,7 +29,7 @@
         <button class="btn-nav" onclick="cambiarPagina('seccion-realidad')">Iniciar</button>
     </div>
 
-    <!-- PÁGINA 2: LA AMISTAD EN LA VIDA REAL -->
+    <!-- PÁGINA 2 -->
     <div id="seccion-realidad" class="section fondoc card">
       
         <div class="badge friendship">Hermanos de diferentes estados </div>
@@ -163,9 +163,9 @@
 
 </div>
 <script>
-// ==========================
+
 // FONDO INICIAL SEGÚN SECCIÓN ACTIVA
-// ==========================
+
 window.addEventListener("DOMContentLoaded", () => {
     const seccionActiva = document.querySelector(".section.active");
     if (seccionActiva) {
@@ -179,9 +179,9 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-    // ==========================
+    
     // CAMBIO DE PÁGINAS
-    // ==========================
+    
     function cambiarPagina(idSeccion) {
         document.querySelectorAll('.section').forEach(seccion => {
             seccion.classList.remove('active');
@@ -200,9 +200,9 @@ window.addEventListener("DOMContentLoaded", () => {
             musica.pause();
         }
 
-        // ==========================
+        
         // CAMBIO DE FONDO DEL BODY
-        // ==========================
+        
         document.body.className = ""; // limpia clases anteriores
         if (idSeccion === "seccion-prin") {
             document.body.classList.add("inicio");
@@ -213,9 +213,8 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // ==========================
+    
     // FONDOS INDEPENDIENTES (slider)
-    // ==========================
     const sliderRealidad = document.getElementById("slider-realidad");
 
     const fondos = [
@@ -264,9 +263,9 @@ window.addEventListener("DOMContentLoaded", () => {
         sliderRealidad.style.backgroundImage = `url('${fondos[fondoActual]}')`;
     }, 3000);
 
-    // ==========================
+    
     // CARRUSEL
-    // ==========================
+    
     let currentPair = 0;
     const pairs = document.querySelectorAll('.slide-pair');
 
@@ -277,9 +276,9 @@ window.addEventListener("DOMContentLoaded", () => {
         pairs[currentPair].classList.add('active-pair');
     }, 3500);
 
-    // ==========================
-    // KARAOKE
-    // ==========================
+    
+    // Letra cancion
+    
     const musica = document.getElementById("musica-fondo");
     const lyrics = document.querySelectorAll(".lyric-line");
 
